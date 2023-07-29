@@ -30,6 +30,8 @@
   }
 
   #home {
+    height: 100vh;
+      
     padding: 20px;
     background: rgba(0, 0, 0, .8);
     color: white;
