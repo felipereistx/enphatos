@@ -1,0 +1,30 @@
+:root {
+    --primary: #2661D8;
+    --secondary: #0F3447;
+    --accent: #FFCD32;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  header {
+    width: 100vw;
+    height: 60px;
+
+    background: var(--primary);
+    color: var(--primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header h1 {
+    background: white;
+    padding: 0 5px;
+    border-radius: 10px;
+  }
