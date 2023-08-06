@@ -54,6 +54,7 @@ img {
 
 #viewport-content {
     margin: 20px;
+    padding-bottom: 10px;
     border-bottom: 10px solid var(--accent);
     border-radius: 5px;
 
@@ -121,9 +122,57 @@ p {
 
 #form_preciso_de_ajuda form p {
     color: var(--primary);
-    
 }
 
 #form_preciso_de_ajuda form hr {
     border: 1px solid var(--primary);
+}
+
+#form_preciso_de_ajuda .form-input p {
+    width: 80vw;
+
+    margin-bottom: 10px;
+    color: black;
+}
+
+.form-input input {
+    width: 80vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+}
+
+li {
+    list-style: none;
+}
+
+.checkboxInputs, .termsCheckboxInputs {
+    margin-top: 10px;
+}
+
+.checkboxInputs input, .termsCheckboxInputs input {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 80vw;
+    height: 125px;
+    margin-top: 10px;
+
+    resize: none;
+
+    border-radius: 5px;
+    border: 1px solid #888888;
+}
+
+.sendFormButton  {
+    height: 40px;
+    width: 120px;
+
+    border: none;
+    background: var(--accent);
+    color: var(--secondary);
+
+    border-radius: 30px;
+    font-weight: 800;
 }
