@@ -1,16 +1,19 @@
 :root {
-    --primary: #2661D8;
-    --secondary: #0F3447;
-    --accent: #FFCD32;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-  }
+  --primary: #2661D8;
+  --secondary: #0F3447;
+  --accent: #FFCD32;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* mobile: iPhone SE 2020+  */
+
+@media (max-height: 567px){
   header {
     width: 100vw;
     height: 60px;
@@ -29,12 +32,16 @@
     border-radius: 10px;
   }
 
+  main {
+    background: url(/assets/images/home_portrait.jpg) no-repeat center;
+  }
+
   #home {
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
 
     padding: 20px;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .7);
     color: white;
   }
 
@@ -66,5 +73,83 @@
     background: var(--accent);
     color: var(--secondary);
 
+    margin: 20px 0;
+  }
+}
+
+/* mobile */
+@media (min-height: 568px){
+  header {
+    width: 100vw;
+    height: 60px;
+
+    background: var(--primary);
+    color: var(--primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header h1 {
+    background: white;
+    padding: 0 5px;
+    border-radius: 10px;
+  }
+
+  main {
+    background: url(/assets/images/home_portrait.jpg) no-repeat center;
+  }
+
+  #home {
+    width: 100vw;
+    height: 100vh;
+
+    padding: 20px;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+  }
+
+  #home p {
+    margin-top: 25px;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 10em;
+    text-align: center;
+
     margin-top: 20px;
   }
+
+  a:first-child {
+    background: var(--primary);
+    color: white;
+  }
+
+  a:last-child {
+    background: var(--accent);
+    color: var(--secondary);
+
+    margin: 20px 0;
+  }
+}
+
+/* mobile: 720px */
+@media (max-height: 720px){
+  #home {
+    width: 100vw;
+    height: 100vh;
+
+    padding: 20px;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+  }
+}
