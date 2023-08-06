@@ -9,13 +9,143 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/styles/index.css">
+    <link rel="stylesheet" href="/assets/styles/ajudar.css">
 
 </head>
 <body>
     <header>
-        <h1>enphatos</h1>
+        <a href="/index.html">
+            <h1>enphatos</h1>
+        </a>
     </header>
-    
+    <main>
+        <img src="/assets/images/quero_ajudar.jpg" alt="">
+        <div id="viewport-question">
+            <h1>Quer Ajudar?</h1>
+        </div>
+        <div id="viewport-content">
+            <p>A EnPhatos esta aqui para realizar esta conexão!</p>
+            <p>Mas, antes de preencher o formulário ao final da página, verifique se você atende as condições abaixo:</p>
+            <p>
+                1 - Formação e experiência na área escolhida
+                <br><br>
+                2 - Interesse em ser voluntário social
+                <br><br>
+                3 - Tem disponibilidade para comparecer a encontros e/ou palestras presencialmente
+                <br><br>
+                4 - Concorda com o termo de compromisso <a href="#" onclick="alert('⚠️ | Ops! Este termos ainda não foram escritos...')">(clicando aqui)</a>.</p>
+        </div>
+        <div id="viewport-question2">
+            <h1>O que oferecemos</h1>
+        </div>
+        <div id="viewport-content2">
+            <br>
+            <h3>Orientação Jurídica</h3>
+            <div class="content2">
+                <p>Uma boa assistência jurídica pode dar o correto direcionamento para o seu negócio! Nossos advogados voluntários podem ajudar com consultorias empresariais, consultoria trabalhista, consultoria tributária, registro para MEI, elaboração de termos e revisão de contratos, dentro outros assuntos!</p>
+            </div>
+            <br>
+            <h3>Consultoria de Marketing</h3>
+            <div class="content2">
+                <p>Muitos negócios tem migrado para ambientes virtuais, no intuito de prospectar novos clientes. Assim, optam pela consultoria de marketing, você pode aprender e se destacar nas redes sociais, criar uma identidade visual, aumentar seu engajamento e melhorar a comunicação da sua marca.</p>
+            </div>
+            <br>
+            <h3>Mentoria de Negócios</h3>
+            <div class="content2">
+                <p>Tem dúvidas? Esta mentoria envolve todas elas, a gestão. Saiba como impulsionar seu
+                    negócio, atrair clientes, planejar
+                    novas estratégias, melhorar a
+                    proposta de valor, aprimorar o
+                    catálogo, gerar inovação com os
+                    produtos e muito mais.</p>
+            </div>
+            <br>
+            <h3>Assessoria financeira</h3>
+            <div class="content2">
+                <p>Se o seu problema for contábil ou
+                    financeiro, podemos te ajudar
+                    com orientações voltadas à
+                    aumento do faturamento,
+                    organização de finanças,
+                    orçamento, fluxo de caixa e
+                    assuntos relacionados.</p>
+            </div>
+        </div>
+        <div id="viewport-question3">
+            <h1>Formulário de Cadastro</h1>
+        </div>
+        <div id="form_preciso_de_ajuda">
+            <p>O preenchimento correto deste formulário é
+                essencial para que possamos te auxiliar
+                da melhor forma.</p>
+            <form action="">
+                <p>Informações Pessoais</p>
+                <hr>
+                <div class="form-input">
+                    <p>Nome *</p>
+                    <input type="text" id="name2" name="name2" placeholder="Exemplo: Ronaldo Teixeira" required>
+                    
+                    <p>Qual é a sua área de formação? *</p>
+                    <input type="text" id="formation" name="formation" placeholder="Exemplo: Direito Constitucional" required>
+
+                    <p>Qual profissão você exerce atualmente? *</p>
+                    <input type="text" id="practiced_profession" name="practiced_profession" placeholder="Exemplo: Advogado(a)" required>
+                    
+                </div>
+                <p>Informações de Contato</p>
+                <hr>
+                <div class="form-input">
+                    <p>Cidade *</p>
+                    <input type="text" id="name" name="name" placeholder="Exemplo: Salvador" required>
+                    
+                    <p>Estado (UF) *</p>
+                    <input type="text" id="role_position" name="role_position" placeholder="Exemplo: BA ou Bahia" required>
+                    
+                    <p>Email *</p>
+                    <input type="text" id="work_description" name="work_description" placeholder="Exemplo: seu_email@email.com" required>
+                </div>
+                <p>Área(s) que gostaria de prestar auxílio voluntário *</p>
+                <hr>
+                <div class="checkboxInputs">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="assessoria_contabil" id="assessoria_contabil">
+                            <label for="assessoria_contabil">Assessoria contábil</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="mentoria_negocios" id="mentoria_negocios">
+                            <label for="mentoria_negocios">Mentoria de negócios</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="orientacao_juridica" id="orientacao_juridica">
+                            <label for="orientacao_juridica">Orientação jurídica</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="consultoria_marketing" id="consultoria_marketing">
+                            <label for="consultoria_marketing">Consultoria de marketing</label>
+                        </li>
+                    </ul>
+                </div>
+                <p>Justifique sua escolha anterior, indicando especificamente, como podemos te ajudar! *</p>
+                <textarea name="" id="" maxlength="200" wrap="soft"></textarea>
+                
+                <div class="termsCheckboxInputs">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="aceitacao_termos" id="aceitacao_termos">
+                            <label for="aceitacao_termos">Informo que li o termo de compromisso e atendo aos requisitos
+                                exigidos.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="aceitacao_termos2" id="aceitacao_termos2">
+                            <label for="aceitacao_termos2">Concordo em fornecer os dados para finalidade deste projeto.</label>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <input type="submit" value="Enviar" class="sendFormButton" onclick="alert('⚠️ | Ops! Esta opção ainda esta sendo desenvolvida')">
+            </form>
+        </div>
+    </main>
 </body>
 </html>

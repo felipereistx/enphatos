@@ -33,7 +33,7 @@
                 <br><br>
                 3 - Tem disponibilidade para comparecer a encontros e/ou palestras presencialmente
                 <br><br>
-                4 - Concorda com o termo de compromisso <a href="">(clicando aqui)</a>.</p>
+                4 - Concorda com o termo de compromisso <a href="#" onclick="alert('⚠️ | Ops! Este termos ainda não foram escritos...')">(clicando aqui)</a>.</p>
         </div>
         <div id="viewport-question2">
             <h1>O que oferecemos</h1>
@@ -78,21 +78,72 @@
             <p>O preenchimento correto deste formulário é
                 essencial para que possamos te auxiliar
                 da melhor forma.</p>
-            <form action="" style="display: none;">
-                <p>Pessoal</p>
-                <hr><br>
+            <form action="">
+                <p>Informações Pessoais</p>
+                <hr>
                 <div class="form-input">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" required>
+                    <p>Nome *</p>
+                    <input type="text" id="name" name="name" placeholder="Exemplo: Ronaldo Teixeira" required>
                     
-                    <label for="role_position"></label>
-                    <input type="text" id="role_position" required>
+                    <p>Qual é o seu cargo na empresa ou projeto social? *</p>
+                    <input type="text" id="role_position" name="role_position" placeholder="Exemplo: Gerente de Projetos" required>
 
-                    <label for="work_description"></label>
-                    <input type="text" id="work_description" required>
+                    <p>Qual a descrição mais apropriada para o seu negócio? *</p>
+                    <input type="text" id="work_description" name="work_description" placeholder="Exemplo: Loja varejista - Têxtil" required>
+                    
                 </div>
+                <p>Informações de Contato</p>
+                <hr>
+                <div class="form-input">
+                    <p>Cidade *</p>
+                    <input type="text" id="name" name="name" placeholder="Exemplo: Salvador" required>
+                    
+                    <p>Estado (UF) *</p>
+                    <input type="text" id="role_position" name="role_position" placeholder="Exemplo: BA ou Bahia" required>
+                    
+                    <p>Email *</p>
+                    <input type="text" id="work_description" name="work_description" placeholder="Exemplo: seu_email@email.com" required>
+                </div>
+                <p>Área(s) que gostaria de auxílio *</p>
+                <hr>
+                <div class="checkboxInputs">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="assessoria_contabil" id="assessoria_contabil">
+                            <label for="assessoria_contabil">Assessoria contábil</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="mentoria_negocios" id="mentoria_negocios">
+                            <label for="mentoria_negocios">Mentoria de negócios</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="orientacao_juridica" id="orientacao_juridica">
+                            <label for="orientacao_juridica">Orientação jurídica</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="consultoria_marketing" id="consultoria_marketing">
+                            <label for="consultoria_marketing">Consultoria de marketing</label>
+                        </li>
+                    </ul>
+                </div>
+                <p>Justifique sua escolha anterior, indicando especificamente, como podemos te ajudar! *</p>
+                <textarea name="" id="" maxlength="200" wrap="soft"></textarea>
                 
-
+                <div class="termsCheckboxInputs">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="aceitacao_termos" id="aceitacao_termos">
+                            <label for="aceitacao_termos">Informo que li o termo de compromisso e atendo aos requisitos
+                                exigidos.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="aceitacao_termos2" id="aceitacao_termos2">
+                            <label for="aceitacao_termos2">Concordo em fornecer os dados para finalidade deste projeto.</label>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <input type="submit" value="Enviar" class="sendFormButton" onclick="alert('⚠️ | Ops! Esta opção ainda esta sendo desenvolvida')">
             </form>
         </div>
     </main>
